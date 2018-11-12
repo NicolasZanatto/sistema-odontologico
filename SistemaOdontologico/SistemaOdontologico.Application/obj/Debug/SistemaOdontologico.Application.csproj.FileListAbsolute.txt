@@ -1,0 +1,5 @@
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico.Web\SistemaOdontologico.Application\bin\Debug\SistemaOdontologico.Application.dll
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico.Web\SistemaOdontologico.Application\bin\Debug\SistemaOdontologico.Application.pdb
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico.Web\SistemaOdontologico.Application\obj\Debug\SistemaOdontologico.Application.csproj.CoreCompileInputs.cache
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico.Web\SistemaOdontologico.Application\obj\Debug\SistemaOdontologico.Application.dll
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico.Web\SistemaOdontologico.Application\obj\Debug\SistemaOdontologico.Application.pdb

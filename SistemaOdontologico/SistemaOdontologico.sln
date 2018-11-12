@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{7C92215D-E316-44F5-9B45-A21F6111FC4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{72937190-ED34-402B-BA5A-81C325FFE7BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{EBB5C652-935E-4852-88B6-E9F62537502F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{A311EDC3-964E-434D-86F7-FA3D239620F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{B755D56B-15C0-4F1F-83BE-6CA9239E03C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{7CEAD0DC-753D-4275-97BC-92D5C52AD363}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{BCB70F24-62A7-4BAF-A3C2-D8781C40830E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Web", "SistemaOdontologico.Web\SistemaOdontologico.Web.csproj", "{DDFF8230-8946-4CB0-81D6-F04AA316D422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Domain", "SistemaOdontologico.Domain\SistemaOdontologico.Domain.csproj", "{941FCF48-AA91-4893-B3F3-5B293B4377E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Infra.Data", "SistemaOdontologico.Infra.Data\SistemaOdontologico.Infra.Data.csproj", "{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Application", "SistemaOdontologico.Application\SistemaOdontologico.Application.csproj", "{46068187-0E7A-4E81-AB86-58952F214B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Domain.Core", "SistemaOdontologico.Domain.Core\SistemaOdontologico.Domain.Core.csproj", "{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDFF8230-8946-4CB0-81D6-F04AA316D422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDFF8230-8946-4CB0-81D6-F04AA316D422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDFF8230-8946-4CB0-81D6-F04AA316D422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDFF8230-8946-4CB0-81D6-F04AA316D422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941FCF48-AA91-4893-B3F3-5B293B4377E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941FCF48-AA91-4893-B3F3-5B293B4377E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941FCF48-AA91-4893-B3F3-5B293B4377E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941FCF48-AA91-4893-B3F3-5B293B4377E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46068187-0E7A-4E81-AB86-58952F214B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46068187-0E7A-4E81-AB86-58952F214B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46068187-0E7A-4E81-AB86-58952F214B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46068187-0E7A-4E81-AB86-58952F214B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CEAD0DC-753D-4275-97BC-92D5C52AD363} = {B755D56B-15C0-4F1F-83BE-6CA9239E03C9}
+		{BCB70F24-62A7-4BAF-A3C2-D8781C40830E} = {B755D56B-15C0-4F1F-83BE-6CA9239E03C9}
+		{DDFF8230-8946-4CB0-81D6-F04AA316D422} = {7C92215D-E316-44F5-9B45-A21F6111FC4A}
+		{941FCF48-AA91-4893-B3F3-5B293B4377E4} = {A311EDC3-964E-434D-86F7-FA3D239620F2}
+		{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9} = {7CEAD0DC-753D-4275-97BC-92D5C52AD363}
+		{46068187-0E7A-4E81-AB86-58952F214B7C} = {EBB5C652-935E-4852-88B6-E9F62537502F}
+		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E} = {A311EDC3-964E-434D-86F7-FA3D239620F2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {712E484A-CC49-49B9-88B2-F0F49C64ACFC}
+	EndGlobalSection
+EndGlobal
