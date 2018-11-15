@@ -1,4 +1,4 @@
-﻿using SistemaOdontologico.Domain.Interfaces;
+﻿using SistemaOdontologico.Domain.Interfaces.Repositories;
 using SistemaOdontologico.Domain.Models;
 using System;
 using System.Collections.Generic;

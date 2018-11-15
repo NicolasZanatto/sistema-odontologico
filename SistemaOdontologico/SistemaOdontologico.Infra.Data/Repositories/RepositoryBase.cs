@@ -1,4 +1,4 @@
-﻿using SistemaOdontologico.Domain.Interfaces;
+﻿using SistemaOdontologico.Domain.Interfaces.Repositories;
 using SistemaOdontologico.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
@@ -17,6 +17,13 @@ namespace SistemaOdontologico.Infra.Data.Repositories
         {
             Db.Set<TEntity>().Add(obj);
             Db.SaveChanges();
+        }
+
+        public TEntity AddReturnEntity(TEntity obj)
+        {
+            var entity = Db.Set<TEntity>().Add(obj);
+            Db.SaveChanges();
+            return entity;
         }
 
         public IEnumerable<TEntity> GetAll()

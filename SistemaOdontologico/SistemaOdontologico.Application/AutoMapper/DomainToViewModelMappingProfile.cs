@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using SistemaOdontologico.Application.AutoMapper.Mappings;
 using SistemaOdontologico.Application.ViewModels;
 using SistemaOdontologico.Domain.Models;
 using System;
@@ -18,7 +19,8 @@ namespace SistemaOdontologico.Application.AutoMapper
 
         public DomainToViewModelMappingProfile()
         {
-            
+            UsuarioMap.Map(this);
+            ClinicaMap.Map(this);
         }
     }
 }

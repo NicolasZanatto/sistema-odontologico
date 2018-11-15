@@ -46,6 +46,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -148,7 +152,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClinicasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -195,6 +201,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Clinicas\Index.cshtml" />
+    <Content Include="Views\Clinicas\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -212,6 +222,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaOdontologico.Application\SistemaOdontologico.Application.csproj">
+      <Project>{46068187-0E7A-4E81-AB86-58952F214B7C}</Project>
+      <Name>SistemaOdontologico.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaOdontologico.Domain.Core\SistemaOdontologico.Domain.Core.csproj">
+      <Project>{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}</Project>
+      <Name>SistemaOdontologico.Domain.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaOdontologico.Domain\SistemaOdontologico.Domain.csproj">
+      <Project>{941FCF48-AA91-4893-B3F3-5B293B4377E4}</Project>
+      <Name>SistemaOdontologico.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaOdontologico.Infra.Data\SistemaOdontologico.Infra.Data.csproj">
+      <Project>{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}</Project>
+      <Name>SistemaOdontologico.Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

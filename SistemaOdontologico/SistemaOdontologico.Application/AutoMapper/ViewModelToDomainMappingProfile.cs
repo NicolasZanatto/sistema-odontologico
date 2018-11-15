@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AutoMapper;
+using SistemaOdontologico.Application.AutoMapper.Mappings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace SistemaOdontologico.Application.AutoMapper
 {
-    class ViewModelToDomainMappingProfile
+    public class ViewModelToDomainMappingProfile : Profile
     {
+        public override string ProfileName
+        {
+            get { return "ViewModelToDomainMappings"; }
+        }
+
+        public ViewModelToDomainMappingProfile()
+        {
+            UsuarioMap.Map(this);
+            ClinicaMap.Map(this);
+        }
     }
 }
