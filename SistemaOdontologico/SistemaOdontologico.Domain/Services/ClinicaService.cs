@@ -1,4 +1,5 @@
 ﻿using SistemaOdontologico.Domain.Interfaces.Repositories;
+using SistemaOdontologico.Domain.Interfaces.Services;
 using SistemaOdontologico.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SistemaOdontologico.Domain.Services
 {
-    public class ClinicaService : ServiceBase<Clinica>, IClinicaRepository
+    public class ClinicaService : ServiceBase<Clinica>, IClinicaService
     {
         private readonly IClinicaRepository _clinicaRepository;
 

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using SistemaOdontologico.Application.Interface;
 using SistemaOdontologico.Application.ViewModels.Clinica;
 using SistemaOdontologico.Application.ViewModels.Usuario;
 using SistemaOdontologico.Domain.Core.Models;
@@ -14,19 +15,25 @@ namespace SistemaOdontologico.Web.Controllers
 {
     public class ClinicasController : Controller
     {
-        private readonly ClinicaRepository clinicaRepository = new ClinicaRepository();
-        private readonly UsuarioRepository usuarioRepository = new UsuarioRepository();
+        private readonly IClinicaAppService clinicaAppService;
+
+        public ClinicasController(IClinicaAppService clinicaAppService)
+        {
+            this.clinicaAppService = clinicaAppService;
+        }
+
         // GET: Clinicas
         public ActionResult Index()
         {
-            var clinicaViewModel = Mapper.Map<IEnumerable<Clinica>, IEnumerable<ListagemViewModel>>(clinicaRepository.GetAll());
+            var clinicaViewModel = clinicaAppService.GetAll();
             return View(clinicaViewModel);
         }
 
         // GET: Clinicas/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(long id)
         {
-            return View();
+            var clinicaViewModel = clinicaAppService.GetById(id);
+            return View(clinicaViewModel);
         }
 
         // GET: Clinicas/Create
@@ -42,20 +49,7 @@ namespace SistemaOdontologico.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                UsuarioViewModel usuarioViewModel = new UsuarioViewModel
-                {
-                    Nome = clinicaViewModel.Nome,
-                    Login = clinicaViewModel.Login,
-                    Senha = clinicaViewModel.Senha,
-                    Ativo = clinicaViewModel.Ativo,
-                    TipoUsuario = eTipoUsuario.Clinica
-                };
-                var usuarioDomain = Mapper.Map<UsuarioViewModel, Usuario>(usuarioViewModel);
-                clinicaViewModel.Usuario = usuarioRepository.AddReturnEntity(usuarioDomain);
-                var clinicaDomain = Mapper.Map<CadastroViewModel, Clinica>(clinicaViewModel);
-
-                clinicaRepository.Add(clinicaDomain);
-
+                clinicaAppService.Add(clinicaViewModel);
                 return RedirectToAction("Index");
             }
 
@@ -63,47 +57,40 @@ namespace SistemaOdontologico.Web.Controllers
         }
 
         // GET: Clinicas/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(long id)
         {
-            return View();
+            var clinicaViewModel = clinicaAppService.GetById(id);
+            return View(clinicaViewModel);
         }
 
         // POST: Clinicas/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(CadastroViewModel clinicaViewModel)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add update logic here
-
+                clinicaAppService.Update(clinicaViewModel);
                 return RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
+
+            return View(clinicaViewModel);
         }
 
         // GET: Clinicas/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(long id)
         {
-            return View();
+            var clinicaViewModel = clinicaAppService.GetById(id);
+            return View(clinicaViewModel);
         }
 
         // POST: Clinicas/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(long id)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            clinicaAppService.Remove(id);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -50,7 +50,7 @@ namespace SistemaOdontologico.Infra.Data.Repositories
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Db.Dispose();
         }
     }
 }

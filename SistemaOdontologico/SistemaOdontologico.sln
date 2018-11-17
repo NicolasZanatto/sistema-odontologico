@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Applica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Domain.Core", "SistemaOdontologico.Domain.Core\SistemaOdontologico.Domain.Core.csproj", "{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaOdontologico.Infra.IoC", "SistemaOdontologico.Infra.IoC\SistemaOdontologico.Infra.IoC.csproj", "{C2707A3C-0FFA-4777-9559-50815D6F7FDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2707A3C-0FFA-4777-9559-50815D6F7FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2707A3C-0FFA-4777-9559-50815D6F7FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2707A3C-0FFA-4777-9559-50815D6F7FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2707A3C-0FFA-4777-9559-50815D6F7FDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9} = {7CEAD0DC-753D-4275-97BC-92D5C52AD363}
 		{46068187-0E7A-4E81-AB86-58952F214B7C} = {EBB5C652-935E-4852-88B6-E9F62537502F}
 		{FAD9D1AE-D6AC-41B3-A951-B399A1F7316E} = {A311EDC3-964E-434D-86F7-FA3D239620F2}
+		{C2707A3C-0FFA-4777-9559-50815D6F7FDF} = {BCB70F24-62A7-4BAF-A3C2-D8781C40830E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {712E484A-CC49-49B9-88B2-F0F49C64ACFC}

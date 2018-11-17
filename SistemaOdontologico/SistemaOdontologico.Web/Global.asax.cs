@@ -1,4 +1,6 @@
 ﻿using SistemaOdontologico.Application.AutoMapper;
+using SimpleInjector.Integration.Web.Mvc;
+using SistemaOdontologico.Infra.IoC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +20,7 @@ namespace SistemaOdontologico.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfig.RegisterMappings();
+            DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(SimpleInjectorContainer.RegisterServices()));
         }
     }
 }

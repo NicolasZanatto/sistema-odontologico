@@ -162,10 +162,14 @@ C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\Sistema
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\Newtonsoft.Json.dll
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SimpleInjector.dll
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SimpleInjector.Integration.Web.dll
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SimpleInjector.Integration.Web.Mvc.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Application.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Domain.Core.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Domain.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Infra.Data.dll
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Infra.IoC.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\System.Web.Helpers.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\System.Web.Mvc.dll
@@ -183,6 +187,10 @@ C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\Sistema
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Domain.pdb
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Infra.Data.pdb
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Infra.Data.dll.config
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SistemaOdontologico.Infra.IoC.pdb
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SimpleInjector.xml
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SimpleInjector.Integration.Web.xml
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\SimpleInjector.Integration.Web.Mvc.xml
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\System.Web.Helpers.xml
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\System.Web.Mvc.xml
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Web\bin\System.Web.Optimization.xml

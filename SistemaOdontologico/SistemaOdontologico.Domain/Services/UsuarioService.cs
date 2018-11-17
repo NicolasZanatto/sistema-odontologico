@@ -1,4 +1,5 @@
 ﻿using SistemaOdontologico.Domain.Interfaces.Repositories;
+using SistemaOdontologico.Domain.Interfaces.Services;
 using SistemaOdontologico.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SistemaOdontologico.Domain.Services
 {
-    public class UsuarioService : ServiceBase<Usuario>, IUsuarioRepository
+    public class UsuarioService : ServiceBase<Usuario>, IUsuarioService
     {
         private readonly IUsuarioRepository _usuarioRepository;
 

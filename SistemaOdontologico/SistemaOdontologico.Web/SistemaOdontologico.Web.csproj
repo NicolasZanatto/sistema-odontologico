@@ -51,6 +51,15 @@
       <HintPath>Bin\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SimpleInjector, Version=4.4.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.4.0\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web, Version=4.4.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.4.4.0\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=4.4.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.4.4.0\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -205,10 +214,12 @@
     <Content Include="Views\Usuarios\Create.cshtml" />
     <Content Include="Views\Clinicas\Index.cshtml" />
     <Content Include="Views\Clinicas\Create.cshtml" />
+    <Content Include="Views\Clinicas\Delete.cshtml" />
+    <Content Include="Views\Clinicas\Details.cshtml" />
+    <Content Include="Views\Clinicas\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -239,6 +250,10 @@
     <ProjectReference Include="..\SistemaOdontologico.Infra.Data\SistemaOdontologico.Infra.Data.csproj">
       <Project>{854436D2-6BC7-4BFD-89E6-BECE7C17E2E9}</Project>
       <Name>SistemaOdontologico.Infra.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaOdontologico.Infra.IoC\SistemaOdontologico.Infra.IoC.csproj">
+      <Project>{C2707A3C-0FFA-4777-9559-50815D6F7FDF}</Project>
+      <Name>SistemaOdontologico.Infra.IoC</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
