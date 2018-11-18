@@ -63,14 +63,20 @@
   <ItemGroup>
     <Compile Include="Context\SistemaOdontologicoContext.cs" />
     <Compile Include="EntityConfig\ClinicaConfiguration.cs" />
+    <Compile Include="EntityConfig\PacienteConfiguration.cs" />
     <Compile Include="EntityConfig\UsuarioConfiguration.cs" />
     <Compile Include="Migrations\201811120020249_Ajustes2.cs" />
     <Compile Include="Migrations\201811120020249_Ajustes2.Designer.cs">
       <DependentUpon>201811120020249_Ajustes2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811172159113_Pacientes.cs" />
+    <Compile Include="Migrations\201811172159113_Pacientes.Designer.cs">
+      <DependentUpon>201811172159113_Pacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ClinicaRepository.cs" />
+    <Compile Include="Repositories\PacienteRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\UsuarioRepository.cs" />
   </ItemGroup>
@@ -94,6 +100,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811120020249_Ajustes2.resx">
       <DependentUpon>201811120020249_Ajustes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811172159113_Pacientes.resx">
+      <DependentUpon>201811172159113_Pacientes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

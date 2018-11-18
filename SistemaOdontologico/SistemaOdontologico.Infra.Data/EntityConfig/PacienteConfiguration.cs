@@ -15,29 +15,30 @@ namespace SistemaOdontologico.Infra.Data.EntityConfig
             HasKey(x => x.Id);
 
             Property(x => x.Nome)
-                .IsRequired()
-                .HasMaxLength(50);
+                .HasMaxLength(50)
+                .IsRequired();
+
+            Property(x => x.TipoSexo)
+                .IsRequired();
 
             Property(x => x.Idade)
                 .IsRequired();
 
-            Property(x => x.Sexo)
-                .IsRequired()
-                .HasMaxLength(12);
-
             Property(x => x.Telefone)
-                .IsRequired()
-                .HasMaxLength(20);
+                .HasMaxLength(50)
+                .IsRequired();
 
             Property(x => x.Email)
-                .IsRequired()
-                .HasMaxLength(100);
+                .HasMaxLength(100)
+                .IsRequired();
 
             Property(x => x.Observacao)
                 .HasMaxLength(1000);
 
-            Property(x => x.Ativo)
-                .IsRequired();
+            HasRequired(x => x.Usuario)
+                .WithMany()
+                .HasForeignKey(x => x.IdUsuario);
+
         }
     }
 }

@@ -50,18 +50,23 @@
   <ItemGroup>
     <Compile Include="AppService\AppServiceBase.cs" />
     <Compile Include="AppService\ClinicaAppService.cs" />
+    <Compile Include="AppService\PacienteAppService.cs" />
     <Compile Include="AppService\UsuarioAppService.cs" />
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\Mappings\ClinicaMap.cs" />
+    <Compile Include="AutoMapper\Mappings\PacienteMap.cs" />
     <Compile Include="AutoMapper\Mappings\UsuarioMap.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
     <Compile Include="Interface\IAppServiceBase.cs" />
     <Compile Include="Interface\IClinicaAppService.cs" />
+    <Compile Include="Interface\IPacienteAppService.cs" />
     <Compile Include="Interface\IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Clinica\CadastroViewModel.cs" />
     <Compile Include="ViewModels\Clinica\ListagemViewModel.cs" />
+    <Compile Include="ViewModels\Paciente\CadastroViewModel.cs" />
+    <Compile Include="ViewModels\Paciente\ListagemViewModel.cs" />
     <Compile Include="ViewModels\Usuario\UsuarioViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -25,6 +25,7 @@ namespace SistemaOdontologico.Domain.Models
         public bool Ativo { get; set; }
         public eTipoUsuario TipoUsuario { get; set; }
         public virtual IEnumerable<Clinica> Clinicas { get; set; }
+        public virtual IEnumerable<Paciente> Pacientes { get; set; }
 
     }
 }

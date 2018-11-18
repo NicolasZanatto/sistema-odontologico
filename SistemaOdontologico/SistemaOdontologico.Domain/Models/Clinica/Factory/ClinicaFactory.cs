@@ -8,12 +8,5 @@ namespace SistemaOdontologico.Domain.Models
 {
     public partial class Clinica
     {
-        //public static Clinica CriarNovo
-        //    (
-        //        string nome
-        //    )
-        //{
-
-        //}
     }
 }

@@ -21,7 +21,7 @@ namespace SistemaOdontologico.Application.ViewModels.Clinica
 
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
-
+        public long IdUsuario { get; set; }
         public Domain.Models.Usuario Usuario { get; set; }
 
     }

@@ -42,6 +42,16 @@ namespace SistemaOdontologico.Application.AppService
 
         public void Update(CadastroViewModel clinicaViewModel)
         {
+            clinicaViewModel.Usuario = Usuario.Criar
+                (
+                    clinicaViewModel.IdUsuario,
+                    clinicaViewModel.Nome,
+                    clinicaViewModel.Login,
+                    clinicaViewModel.Senha,
+                    eTipoUsuario.Clinica,
+                    clinicaViewModel.Ativo
+                );
+            _usuarioService.Update(clinicaViewModel.Usuario);
             var clinica = Mapper.Map<CadastroViewModel, Clinica>(clinicaViewModel);
             _clinicaService.Update(clinica);
         }
@@ -65,10 +75,10 @@ namespace SistemaOdontologico.Application.AppService
             return Mapper.Map<Clinica, CadastroViewModel>(clinica);
         }
 
-        public IEnumerable<CadastroViewModel> GetByName(string nome)
+        public IEnumerable<ListagemViewModel> GetByName(string nome)
         {
             var clinica = _clinicaService.BuscarPorNome(nome);
-            return Mapper.Map<IEnumerable<Clinica>, IEnumerable<CadastroViewModel>>(clinica);
+            return Mapper.Map<IEnumerable<Clinica>, IEnumerable<ListagemViewModel>>(clinica);
         }
        
         public void Dispose()

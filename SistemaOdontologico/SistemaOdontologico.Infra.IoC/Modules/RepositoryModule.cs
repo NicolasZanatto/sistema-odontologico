@@ -13,9 +13,9 @@ namespace SistemaOdontologico.Infra.IoC.Modules
     {
         public static void Register(Container container)
         {
-            //container.Register(typeof(IRepositoryBase<>), typeof(IRepositoryBase<>).Assembly);
             container.Register<IUsuarioRepository, UsuarioRepository>(Lifestyle.Scoped);
             container.Register<IClinicaRepository, ClinicaRepository>(Lifestyle.Scoped);
+            container.Register<IPacienteRepository, PacienteRepository>(Lifestyle.Scoped);
         }
     }
 }

@@ -12,9 +12,8 @@ namespace SistemaOdontologico.Application.Interface
     {
         void Add(UsuarioViewModel usuarioViewModel);
         void Update(UsuarioViewModel usuarioViewModel);
-        void Remove(UsuarioViewModel usuarioViewModel);
+        void Remove(long id);
         UsuarioViewModel GetById(long id);
         IEnumerable<UsuarioViewModel> GetAll();
-        IEnumerable<UsuarioViewModel> GetByName(string nome);
     }
 }

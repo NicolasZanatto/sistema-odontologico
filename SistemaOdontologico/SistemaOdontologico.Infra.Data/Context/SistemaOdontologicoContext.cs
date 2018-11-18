@@ -19,7 +19,7 @@ namespace SistemaOdontologico.Infra.Data.Context
             : base("SistemaOdontologico")
         {
         }
-
+        public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Clinica> Clinicas { get; set; }
 
@@ -33,6 +33,7 @@ namespace SistemaOdontologico.Infra.Data.Context
         {
             modelBuilder.Configurations.Add(new UsuarioConfiguration());
             modelBuilder.Configurations.Add(new ClinicaConfiguration());
+            modelBuilder.Configurations.Add(new PacienteConfiguration());
         }
 
         private static void RemovendoConvencoes(DbModelBuilder modelBuilder)

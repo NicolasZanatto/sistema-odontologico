@@ -15,6 +15,6 @@ namespace SistemaOdontologico.Application.Interface
         void Remove(long id);
         CadastroViewModel GetById(long id);
         IEnumerable<ListagemViewModel> GetAll();
-        IEnumerable<CadastroViewModel> GetByName(string nome);
+        IEnumerable<ListagemViewModel> GetByName(string nome);
     }
 }

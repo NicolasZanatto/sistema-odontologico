@@ -13,13 +13,14 @@ namespace SistemaOdontologico.Application.AutoMapper.Mappings
         public static void Map(ViewModelToDomainMappingProfile profile)
         {
             profile.CreateMap<CadastroViewModel, Clinica>()
-                .ForMember(x => x.IdUsuario, m => m.MapFrom(o => o.Usuario.Id));
+                .ForMember(x => x.IdUsuario, m => m.MapFrom(o => o.IdUsuario));
         }
         public static void Map(DomainToViewModelMappingProfile profile)
         {
             profile.CreateMap<Clinica, ListagemViewModel>();
 
             profile.CreateMap<Clinica, CadastroViewModel>()
+                .ForMember(x => x.IdUsuario, m => m.MapFrom(o => o.IdUsuario))
                 .ForMember(x => x.Nome, m => m.MapFrom(o => o.Nome))
                 .ForMember(x => x.Login, m => m.MapFrom(o => o.Usuario.Login))
                 .ForMember(x => x.Senha, m => m.MapFrom(o => o.Usuario.Senha))

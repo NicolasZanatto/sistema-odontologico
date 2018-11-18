@@ -22,7 +22,8 @@ namespace SistemaOdontologico.Application.AppService
 
         public void Add(UsuarioViewModel usuarioViewModel)
         {
-            throw new NotImplementedException();
+            var usuario = Mapper.Map<UsuarioViewModel, Usuario>(usuarioViewModel);
+            _usuarioService.Add(usuario);
         }
 
         public IEnumerable<UsuarioViewModel> BuscarTodos()
@@ -37,27 +38,25 @@ namespace SistemaOdontologico.Application.AppService
 
         public IEnumerable<UsuarioViewModel> GetAll()
         {
-            throw new NotImplementedException();
+            return Mapper.Map<IEnumerable<Usuario>, IEnumerable<UsuarioViewModel>>(_usuarioService.GetAll());
         }
 
         public UsuarioViewModel GetById(long id)
         {
-            throw new NotImplementedException();
+            var usuario = _usuarioService.GetById(id);
+            return Mapper.Map<Usuario, UsuarioViewModel>(usuario);
         }
 
-        public IEnumerable<UsuarioViewModel> GetByName(string nome)
+        public void Remove(long id)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(UsuarioViewModel usuarioViewModel)
-        {
-            throw new NotImplementedException();
+            var usuario = _usuarioService.GetById(id);
+            _usuarioService.Remove(usuario);
         }
 
         public void Update(UsuarioViewModel usuarioViewModel)
         {
-            throw new NotImplementedException();
+            var usuario = Mapper.Map<UsuarioViewModel, Usuario>(usuarioViewModel);
+            _usuarioService.Update(usuario);
         }
     }
 }

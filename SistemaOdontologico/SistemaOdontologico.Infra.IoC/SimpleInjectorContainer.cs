@@ -16,7 +16,6 @@ namespace SistemaOdontologico.Infra.IoC
 
             var container = new Container();
             container.Options.DefaultScopedLifestyle = new WebRequestLifestyle() ;
-           // container.GetAllInstances()
             MapperModules(container);
             container.Verify();
 
