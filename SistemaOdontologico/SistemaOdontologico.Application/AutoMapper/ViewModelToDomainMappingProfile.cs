@@ -20,6 +20,7 @@ namespace SistemaOdontologico.Application.AutoMapper
             UsuarioMap.Map(this);
             ClinicaMap.Map(this);
             PacienteMap.Map(this);
+            RadiografiaMap.Map(this);
         }
     }
 }

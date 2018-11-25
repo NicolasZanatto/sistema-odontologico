@@ -16,6 +16,7 @@ namespace SistemaOdontologico.Infra.IoC.Modules
             container.Register<IUsuarioAppService, UsuarioAppService>(Lifestyle.Scoped);
             container.Register<IClinicaAppService, ClinicaAppService>(Lifestyle.Scoped);
             container.Register<IPacienteAppService, PacienteAppService>(Lifestyle.Scoped);
+            container.Register<IRadiografiaAppService, RadiografiaAppService>(Lifestyle.Scoped);
         }
     }
 }

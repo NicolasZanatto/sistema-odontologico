@@ -26,5 +26,8 @@ namespace SistemaOdontologico.Domain.Models
         public string Observacao { get; set; }
         public long IdUsuario { get; set; }
         public virtual Usuario Usuario { get; set; }
+
+        public virtual IEnumerable<Radiografia> Radiografias { get; set; }
+
     }
 }

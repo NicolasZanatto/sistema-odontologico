@@ -83,5 +83,10 @@ namespace SistemaOdontologico.Web.Controllers
             pacienteAppService.Remove(id);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Radiografias(long id)
+        {
+            return RedirectToAction("Index", "Radiografias", new { Id = id });
+        }
     }
 }

@@ -43,3 +43,4 @@ C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\Sistema
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Infra.Data\obj\Debug\SistemaOdontologico.Infra.Data.dll
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Infra.Data\obj\Debug\SistemaOdontologico.Infra.Data.pdb
 C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Infra.Data\obj\Debug\SistemaOdontologico.Infra.Data.Migrations.Pacientes.resources
+C:\Users\nicol\Documents\GitHub\sistema-odontologico\SistemaOdontologico\SistemaOdontologico.Infra.Data\obj\Debug\SistemaOdontologico.Infra.Data.Migrations.Radiografias.resources

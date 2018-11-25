@@ -16,6 +16,7 @@ namespace SistemaOdontologico.Infra.IoC.Modules
             container.Register<IUsuarioRepository, UsuarioRepository>(Lifestyle.Scoped);
             container.Register<IClinicaRepository, ClinicaRepository>(Lifestyle.Scoped);
             container.Register<IPacienteRepository, PacienteRepository>(Lifestyle.Scoped);
+            container.Register<IRadiografiaRepository, RadiografiaRepository>(Lifestyle.Scoped);
         }
     }
 }

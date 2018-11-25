@@ -1,0 +1,54 @@
+﻿@model SistemaOdontologico.Application.ViewModels.Radiografia.CadastroViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Paciente: @ViewBag.Paciente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Clinica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clinica)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacao)
+        </dd>
+        <dt>
+            Link:
+        </dt>
+        <dd>
+            <a href=@ViewBag.Url download>Download link</a>
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", new { id = Model.IdPaciente })
+</p>

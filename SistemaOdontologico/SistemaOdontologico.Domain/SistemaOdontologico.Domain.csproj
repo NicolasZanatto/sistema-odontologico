@@ -32,21 +32,26 @@
   <ItemGroup>
     <Compile Include="Interfaces\Repositories\IClinicaRepository.cs" />
     <Compile Include="Interfaces\Repositories\IPacienteRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRadiografiaRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Repositories\IUsuarioRepository.cs" />
     <Compile Include="Interfaces\Services\IClinicaService.cs" />
     <Compile Include="Interfaces\Services\IPacienteService.cs" />
+    <Compile Include="Interfaces\Services\IRadiografiaService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Interfaces\Services\IUsuarioService.cs" />
     <Compile Include="Models\Clinica\Clinica.cs" />
     <Compile Include="Models\Clinica\Factory\ClinicaFactory.cs" />
     <Compile Include="Models\Paciente\Factory\PacienteFactory.cs" />
     <Compile Include="Models\Paciente\Paciente.cs" />
+    <Compile Include="Models\Radiografia\Factory\RadiografiaFactory.cs" />
+    <Compile Include="Models\Radiografia\Radiografia.cs" />
     <Compile Include="Models\Usuario\Factory\UsuarioFactory.cs" />
     <Compile Include="Models\Usuario\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ClinicaService.cs" />
     <Compile Include="Services\PacienteService.cs" />
+    <Compile Include="Services\RadiografiaService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
     <Compile Include="Services\UsuarioService.cs" />
   </ItemGroup>

@@ -22,6 +22,7 @@ namespace SistemaOdontologico.Infra.Data.Context
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Clinica> Clinicas { get; set; }
+        public DbSet<Radiografia> Radiografias { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -34,6 +35,7 @@ namespace SistemaOdontologico.Infra.Data.Context
             modelBuilder.Configurations.Add(new UsuarioConfiguration());
             modelBuilder.Configurations.Add(new ClinicaConfiguration());
             modelBuilder.Configurations.Add(new PacienteConfiguration());
+            modelBuilder.Configurations.Add(new RadiografiaConfiguration());
         }
 
         private static void RemovendoConvencoes(DbModelBuilder modelBuilder)
