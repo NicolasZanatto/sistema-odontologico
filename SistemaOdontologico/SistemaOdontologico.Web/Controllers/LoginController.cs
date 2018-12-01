@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using SistemaOdontologico.Application.ViewModels.Login;
+using System.Web.Mvc;
 
 namespace SistemaOdontologico.Web.Controllers
 {
@@ -10,7 +11,8 @@ namespace SistemaOdontologico.Web.Controllers
             return View();
         }
 
-        public ActionResult Login()
+        [HttpPost]
+        public ActionResult Index(LoginViewModel loginViewModel)
         {
             return RedirectToAction("Index", "Home");
         }

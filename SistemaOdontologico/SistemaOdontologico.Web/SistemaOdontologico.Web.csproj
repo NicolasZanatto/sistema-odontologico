@@ -173,6 +173,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -222,8 +223,11 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
-    <Content Include="favicon.ico" />
+    <Content Include="fonts\2185062.png" />
+    <Content Include="fonts\logo.png" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\teeth-icon.png" />
+    <Content Include="fonts\Untitled-1.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -245,6 +249,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -276,7 +281,8 @@
     <Content Include="Views\Radiografias\Index.cshtml" />
     <Content Include="Views\Radiografias\Create.cshtml" />
     <Content Include="Views\Radiografias\Details.cshtml" />
-    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Shared\_loginLayout.cshtml" />
+    <Content Include="Views\Radiografias\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

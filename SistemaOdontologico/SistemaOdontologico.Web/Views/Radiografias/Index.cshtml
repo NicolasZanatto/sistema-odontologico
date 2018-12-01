@@ -3,9 +3,10 @@
     ViewBag.Title = "Radiografias";
 }
 
-<h2>Paciente: @ViewBag.Paciente</h2>
+<h2 class="text-center">Listagem de Radiografias</h2>
+<h4>Paciente: @ViewBag.Paciente</h4>
 
-<table class="table">
+<table class="table table-hover table-striped table-responsive">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Clinica)

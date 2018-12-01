@@ -30,9 +30,9 @@ namespace SistemaOdontologico.Web
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css",
                       "~/Content/Plugins/css/datepicker.css",
-                      "~/Content/Plugins/css/clockpicker.css"));
+                      "~/Content/Plugins/css/clockpicker.css",
+                      "~/Content/site.css"));
         }
     }
 }

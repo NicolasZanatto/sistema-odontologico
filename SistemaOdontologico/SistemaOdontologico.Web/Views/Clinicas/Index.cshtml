@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class="text-center">Listagem de Clínicas</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Criar Novo", "Create")
 </p>
-<table class="table">
+<table class="table table-hover table-striped table-responsive">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Nome)

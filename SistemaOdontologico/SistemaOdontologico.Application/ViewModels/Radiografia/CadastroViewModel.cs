@@ -12,8 +12,11 @@ namespace SistemaOdontologico.Application.ViewModels.Radiografia
     {
         [Key]
         public long Id { get; set; }
-
+        [DisplayName("Paciente")]
+        [Required(ErrorMessage = "Preencha o campo paciente")]
         public long IdPaciente { get; set; }
+        [DisplayName("Clínica")]
+        [Required(ErrorMessage = "Preencha o campo clínica")]
         public long IdClinica { get; set; }
         public string Paciente { get; set; }
         public string Clinica { get; set; }

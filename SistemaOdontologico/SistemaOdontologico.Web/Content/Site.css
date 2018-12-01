@@ -22,3 +22,20 @@ select,
 textarea {
     max-width: 280px;
 }
+.barra-nav {
+    background-color: #f26c68;
+    border-color: #f26c68;
+}
+
+.navbar-words {
+    color: #fff !important;
+}
+.dropdowns {
+    padding: 3px 20px   ;
+    font-size: 15px;
+    color: #000;
+}
+.radiografia-img{
+    max-height:300px;
+    max-width:500px;
+}

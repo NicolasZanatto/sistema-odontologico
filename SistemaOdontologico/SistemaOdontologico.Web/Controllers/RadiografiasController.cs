@@ -42,7 +42,7 @@ namespace SistemaOdontologico.Web.Controllers
             {
                 cadastroViewModel.LinkImg = file.FileName;
                 radiografiaAppService.Add(cadastroViewModel);
-                return View(cadastroViewModel);
+                return RedirectToAction("Index", "Pacientes");
             }
             else
             {
@@ -58,7 +58,7 @@ namespace SistemaOdontologico.Web.Controllers
         {
             var radiografia = radiografiaAppService.GetById(id);
             ViewBag.Paciente = radiografia != null? radiografia.Paciente : string.Empty;
-            ViewBag.Url = "C:/Users/nicol/Documents/GitHub/sistema-odontologico/SistemaOdontologico/SistemaOdontologico.Web/Upload/Radiografias/" + radiografia.LinkImg;
+            ViewBag.Url = radiografia.LinkImg;
             return View(radiografia);
         }
 
@@ -70,10 +70,10 @@ namespace SistemaOdontologico.Web.Controllers
         // POST: Radiografias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(long id)
+        public ActionResult DeleteConfirmed(long Id)
         {
-            pacienteAppService.Remove(id);
-            return RedirectToAction("Index");
+            radiografiaAppService.Remove(Id);
+            return RedirectToAction("Index", "Pacientes");
         }
 
 
