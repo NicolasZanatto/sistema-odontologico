@@ -7,7 +7,7 @@ diversas radiografas, sendo importante registrá-las por datas, de modo que essa
 possam ser utilizadas para acompanhar a evolução do tratamento. 
 
 ### Tecnologias Utilizadas:
-* .NET Framework 4.7.1
+* .NET Framework 4.6.1
 * MySQL Community
 * HTML/CSS (Bootstrap 3)
 * JavaScript (com plugins)
